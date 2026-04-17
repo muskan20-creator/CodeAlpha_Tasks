@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> All</button>
+            <button class="filter-btn" data-filter="nature"><i class="fas fa-leaf"></i> Nature</button>
+            <button class="filter-btn" data-filter="city"><i class="fas fa-city"></i> City</button>
+            <button class="filter-btn" data-filter="animals"><i class="fas fa-paw"></i> Wildlife</button>
+        </div>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=1" alt="Nature Image 1">
+                <div class="overlay">
+                    <div class="caption">Beautiful Forest</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=2" alt="City Image 1">
+                <div class="overlay">
+                    <div class="caption">Urban Skyline</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=3" alt="Animal Image 1">
+                <div class="overlay">
+                    <div class="caption">Wildlife</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=4" alt="Nature Image 2">
+                <div class="overlay">
+                    <div class="caption">Mountain View</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=5" alt="City Image 2">
+                <div class="overlay">
+                    <div class="caption">City Lights</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=6" alt="Animal Image 2">
+                <div class="overlay">
+                    <div class="caption">Ocean Creatures</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=7" alt="Nature Image 3">
+                <div class="overlay">
+                    <div class="caption">Sunset</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=8" alt="City Image 3">
+                <div class="overlay">
+                    <div class="caption">Modern Architecture</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=9" alt="Animal Image 3">
+                <div class="overlay">
+                    <div class="caption">Birds</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=10" alt="Nature Image 4">
+                <div class="overlay">
+                    <div class="caption">Desert Landscape</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=11" alt="City Image 4">
+                <div class="overlay">
+                    <div class="caption">Street View</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=12" alt="Animal Image 4">
+                <div class="overlay">
+                    <div class="caption">Safari</div>
+                </div>
+            </div>
+            <!-- Additional Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=13" alt="Nature Image 5">
+                <div class="overlay">
+                    <div class="caption">Lush Green Valley</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=14" alt="Nature Image 6">
+                <div class="overlay">
+                    <div class="caption">Waterfall</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=15" alt="Nature Image 7">
+                <div class="overlay">
+                    <div class="caption">Autumn Forest</div>
+                </div>
+            </div>
+            <!-- Additional City Images -->
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=16" alt="City Image 5">
+                <div class="overlay">
+                    <div class="caption">Downtown</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=17" alt="City Image 6">
+                <div class="overlay">
+                    <div class="caption">Night Cityscape</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=18" alt="City Image 7">
+                <div class="overlay">
+                    <div class="caption">Bridge View</div>
+                </div>
+            </div>
+            <!-- Additional Animal Images -->
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=19" alt="Animal Image 5">
+                <div class="overlay">
+                    <div class="caption">Deer in Forest</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=20" alt="Animal Image 6">
+                <div class="overlay">
+                    <div class="caption">Butterfly</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/300/200?random=21" alt="Animal Image 7">
+                <div class="overlay">
+                    <div class="caption">Elephant Herd</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Image Gallery. Created with ❤️</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="prev" id="prev-btn">&#10094;</a>
+        <a class="next" id="next-btn">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
